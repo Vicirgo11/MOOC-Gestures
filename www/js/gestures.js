@@ -36,6 +36,10 @@ var app={
       zona.className='press';
     });
 
+    hammertime.on('tap', function(ev) {
+      zona.className='tap';
+    });
+
     hammertime.on('swipe', function(ev) {
       var clase=undefined;
       direccion=ev.direction;
